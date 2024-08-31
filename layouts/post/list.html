@@ -1,0 +1,28 @@
+{{ define "main" }}
+<link rel="stylesheet" href="/css/custom.css">
+<article class="post-list center mw7">
+  <header>
+    <h1 class="post-title">{{ .Title }}</h1>
+    <section class="post-date">
+      {{ .Content }}
+    </section>
+  </header>
+  <section>
+    {{ range .Paginator.Pages }}
+      <div class="pb5 mb5 bb b--light-gray">
+        <h2 class="post-title">
+          <a href="{{ .RelPermalink }}" class="link black hover-gray">{{ .Title }}</a>
+        </h2>
+        <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+          {{ .Date.Format "January 2, 2006" }}
+        </time>
+        <div class="post-summary">
+          {{ .Summary }}
+        </div>
+        <a href="{{ .RelPermalink }}" class="read-more">Read More</a>
+      </div>
+    {{ end }}
+  </section>
+  {{ template "_internal/pagination.html" . }}
+</article>
+{{ end }}

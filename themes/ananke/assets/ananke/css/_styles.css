@@ -1,0 +1,32 @@
+/* Put your custom styles here and run `npm start` from the "src" directory on */
+
+#TableOfContents ul li {
+  margin-bottom: 1em;
+}
+
+.lh-copy blockquote {
+  display: block;
+  font-size: .875em;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+
+}
+
+.nested-links a{
+  overflow-wrap: break-word;
+}
+
+/* Custom CSS for centering tables */
+.center-table {
+  margin: auto; /* Centers the table */
+  border-collapse: collapse; /* Ensures borders collapse */
+  text-align: center; /* Centers the content inside the table */
+}
+
+.center-table th, .center-table td {
+  padding: 8px; /* Adds some padding for better readability */
+  border: 1px solid #ddd; /* Adds borders to the table cells */
+}
