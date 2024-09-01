@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://ajithsapa.github.io/ajith_site/'
 languageCode = 'en-us'
 title = "Ajith's site"
 theme = 'ananke'
@@ -23,3 +23,4 @@ theme = 'ananke'
 [params]
   description = "Hey! Glad you stumbled upon my site! Take a look!"
   author = "Ajith"
+  custom_css = ["css/custom.css"]
